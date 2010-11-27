@@ -9,8 +9,8 @@ Examples
 module Main where
 import System.SimpleProcess
 
-a = exec "ls"
-b = execFrom "/var" "ls"
-c = execWith "ls" ["-la"]
-d = execFromWith "/var" "ls" ["-la"]
+  a = exec "ls"
+  b = execFrom "/var" "ls"
+  c = execWith "ls" ["-la"]
+  d = execFromWith "/var" "ls" ["-la"]
 
