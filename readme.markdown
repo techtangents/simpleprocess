@@ -6,9 +6,10 @@ A simple Haskell API for running external processes synchronously. Wraps System.
 Examples
 --------
 
-module Main where
-import System.SimpleProcess
-
+	module Main where
+	
+	import System.SimpleProcess
+	
 	a = exec "ls"
 	b = execFrom "/var" "ls"
 	c = execWith "ls" ["-la"]
