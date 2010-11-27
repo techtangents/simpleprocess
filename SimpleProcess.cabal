@@ -1,0 +1,26 @@
+Name:               SimpleProcess
+Version:            0.0.1
+Author:             Dylan Just <dylan@techtangents.com>
+License-file:       LICENSE
+Copyright:          Dylan Just 
+Maintainer:         Dylan Just
+Synopsis:           Wraps System.Process in an easy-to-use interface
+Category:           
+Description:        
+Cabal-version:      >= 1.2
+Build-Type:         Simple
+
+Library
+  Build-Depends:    base < 5 && >= 3,
+                    HUnit,
+                    QuickCheck,
+                    test-framework,
+                    test-framework-hunit,
+                    test-framework-quickcheck2,
+                    process
+
+  GHC-Options:      -Wall
+                    -fno-warn-type-defaults
+                    -fno-warn-name-shadowing
+
+  Exposed-Modules:  System.SimpleProcess 
